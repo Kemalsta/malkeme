@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pagestyle.css">
+    <script src="scriptcalculator.js" defer></script>
+    <title>Conversion Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>Conversion Calculator</h1><br>
+        <nav>
+            <hr>
+            <ul>
+                <li><a href="homepage.html"><img src="Pembaris.png" alt="Gambar Pembaris" width="37" height="25"> Home</a></li>
+                <li><a href="conversionprocessdetail.html"><img src="Pembaris.png" alt="Gambar Pembaris" width="37" height="25"> Conversion Details</a></li>
+                <li><a href="conversioncalculator.html"><img src="Pembaris.png" alt="Gambar Pembaris" width="37" height="25"> Calculator Inch To Cm And Cm To Inch</a></li>
+            </ul>
+            <hr>
+        </nav>
+        <div class="conversion-process">
+            <label for="conversionType">Select a conversion process:</label>
+            <select id="conversionType" onchange="changeConversionType">
+                <option value="inchToCm">Inch to Centimeter</option>
+                <option value="cmToInch">Centimeter to Inch</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <label for="value">Enter value:</label>
+        <p>
+            <input type="number" id="value"> 
+        </p>
+        <p>&nbsp;</p>
+        <button onclick="calculate()">Calculate</button>
+        <p id="result">Result will be displayed here.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Conversion Calculator. All rights reserved.</p>
+    </footer>
+</body>
+</html>

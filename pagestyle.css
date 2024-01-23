@@ -1,0 +1,72 @@
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #ADD8E6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header, main, nav, footer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Verdana', sans-serif;
+    color: #007BFF;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    border-top: 1px solid #333; /* Add a solid border at the top */
+    border-bottom: 1px solid #333; /* Add a solid border at the bottom */
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: #FF0000;
+    position: relative;
+    display: block;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #800000;
+}
+
+a::before {
+    content: url('relative/path/to/GambarGambar/kapalsedangterbang.jpg');
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.conversion-process {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-right: 10px;
+}
